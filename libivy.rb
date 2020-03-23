@@ -8,10 +8,13 @@ class Libivy < Formula
   sha256 "4daa1e5c4c9da271579ff6d5d164d130a8f41390823775232c2b388fef246f0d"
 
   depends_on "glib"
+  depends_on 'pkg-config'
 
   def install
-    ENV.deparallelize
-    system "cd", "src", ";", "make", "-j",  "-f",  "Makefile.osx", "static-libs", "shared-libs"
+    cd "src" do
+      ENV.deparallelize
+      system "make", "-j",  "-f",  "Makefile.osx", "static-libs", "shared-libs"
+    end
 
     include.install "src/ivy.h", "src/ivybind.h", "src/ivybuffer.h", "src/ivychannel.h"
     include.install "src/ivydebug.h", "src/ivyloop.h", "src/ivysocket.h", "src/list.h"
