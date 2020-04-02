@@ -14,11 +14,7 @@ class Libivy < Formula
     cd "src" do
       ENV.deparallelize
       system "make", "-j",  "-f",  "Makefile.osx", "static-libs", "shared-libs"
+      system "make", "-j",  "-f",  "Makefile.osx", "install", "PREFIX=#{prefix}"
     end
-
-    include.install "src/ivy.h", "src/ivybind.h", "src/ivybuffer.h", "src/ivychannel.h"
-    include.install "src/ivydebug.h", "src/ivyloop.h", "src/ivysocket.h", "src/list.h"
-    include.install "src/timer.h", "src/version.h", "src/ivyglibloop.h"
-    lib.install "src/libivy.a", "src/libivy.dylib", "src/libglibivy.a", "src/libglibivy.dylib"
   end
 end
