@@ -14,7 +14,7 @@ class DjnnCpp < Formula
   def install
     ENV.deparallelize
     ENV['CXX'] = "c++" 
-    system "make", "-j", "install", "prefix=#{prefix}"
+    system "make", "-j4", "install", "prefix=#{prefix}"
   end
 
   test do
