@@ -4,12 +4,12 @@
 class DjnnCpp < Formula
   desc "C++ library for interactive software programming "
   homepage "https://github.com/lii-enac/djnn-cpp"
-  url "https://github.com/lii-enac/djnn-cpp/archive/1.12.0.zip"
-  sha256 "e88a8681bb023e3832acf9dcfb59f773a877981f8fd96ab25d87f21ed131b8a6"
+  url "https://github.com/lii-enac/djnn-cpp/archive/1.13.0.zip"
+  sha256 "12c7afc3f6bc744611e452dda24b268a21f36c9ef2cbf2541f77339bbc6477ad"
 
-  depends_on "qt" => "5.14"
+  depends_on "qt" => "5.15"
   depends_on "flex" => "2.6.4"
-  depends_on "libivy" => "3.15.2"
+  depends_on "libivy" => "3.15.3"
 
   def install
     ENV.deparallelize
