@@ -5,7 +5,7 @@ class Smala < Formula
   desc "Compiler for the Smala language"
   homepage ""
   url "https://github.com/lii-enac/smala/archive/1.15.0.zip"
-  sha256 "ec439254e9527169b096ab1fa639caf81c6858016335ef0b5a566fd5f12de291"
+  sha256 "b308dcd8308a74f153c60524f7392b2d2cd588ce51c6b4b5da066a8d0a826ddd"
   
   depends_on "djnn-cpp" => "1.15.0"
   depends_on "bison" => "3.5.3"
