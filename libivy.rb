@@ -4,10 +4,10 @@
 class Libivy < Formula
   desc ""
   homepage "https://github.com/lii-enac/libivy"
-  url "https://github.com/lii-enac/libivy/archive/3.15.4.zip"
-  sha256 "de2563a1c86a219333f6eecc3cacb7c65dab848938a4ebdb80b714bf9fe6c14f"
+  url "https://github.com/lii-enac/libivy/archive/3.15.6.zip"
+  sha256 "d95237e240448cbf378dd03f5753186a622929c2321b7a34644f7aa94d45bfac"
 
-  depends_on "pcre"
+  depends_on "glib"
   depends_on 'pkg-config'
 
   def install
