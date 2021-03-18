@@ -7,7 +7,7 @@ class Libivy < Formula
   url "https://github.com/lii-enac/libivy/archive/3.15.6.zip"
   sha256 "d95237e240448cbf378dd03f5753186a622929c2321b7a34644f7aa94d45bfac"
 
-  depends_on "glib"
+  depends_on "pcre"
   depends_on 'pkg-config'
 
   def install
