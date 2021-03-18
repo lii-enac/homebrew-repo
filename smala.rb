@@ -9,6 +9,7 @@ class Smala < Formula
   
   depends_on "djnn-cpp" => "1.15.0"
   depends_on "bison" => "3.5.3"
+  depends_on "flex"
 
   def install
     ENV.deparallelize

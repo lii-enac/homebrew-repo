@@ -12,6 +12,8 @@ class DjnnCpp < Formula
   depends_on "flex" => "2.6.4"
   depends_on "boost" => "1.74.0"
   depends_on "libivy" => "3.15"
+  depends_on "expat"
+  depends_on "curl"
 
 
   def install
