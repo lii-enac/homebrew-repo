@@ -10,7 +10,6 @@ class DjnnCpp < Formula
   depends_on "qt@5" => "5.15.2"
   depends_on "bison" => "3.5.7"
   depends_on "flex" => "2.6.4"
-  depends_on "boost" => "1.74.0"
   depends_on "libivy" => "3.15"
   depends_on "expat"
   depends_on "curl"
