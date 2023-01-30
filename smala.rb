@@ -4,10 +4,10 @@
 class Smala < Formula
   desc "Compiler for the Smala language"
   homepage ""
-  url "https://github.com/lii-enac/smala/archive/1.18.0.zip"
-  sha256 "753e19e919a7c6c05c87f82c1cb10958c5af795c176cb2794d25987c070552ce"
+  url "https://github.com/lii-enac/smala/archive/1.19.0.zip"
+  sha256 "ae49c919cd60a8f081a051b052f9dc4158b12b115114910933c6faa43a727d68"
   
-  depends_on "djnn-cpp" => "1.18.0"
+  depends_on "djnn-cpp" => "1.19.0"
   depends_on "bison" => "3.5.3"
   depends_on "flex"
 

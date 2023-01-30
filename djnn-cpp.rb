@@ -4,8 +4,8 @@
 class DjnnCpp < Formula
   desc "C++ library for interactive software programming "
   homepage "https://github.com/lii-enac/djnn-cpp"
-  url "https://github.com/lii-enac/djnn-cpp/archive/1.18.0.zip"
-  sha256 "f44b5d058d3bc236af9c12b79faafef95febf3f8e86101b7b282651902f911b8"
+  url "https://github.com/lii-enac/djnn-cpp/archive/1.19.0.zip"
+  sha256 "0f315598dee073592d3cbe6354db167ab0e1f63c227f71e66433d101981b37ca"
 
   depends_on "qt@5" => "5.15.2"
   depends_on "bison" => "3.5.7"
