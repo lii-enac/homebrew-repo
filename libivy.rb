@@ -1,14 +1,11 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Libivy < Formula
-  desc ""
+  desc "Library for bus Ivy (ENAC)"
   homepage "https://github.com/lii-enac/libivy"
-  url "https://github.com/lii-enac/libivy/archive/3.15.7.zip"
-  sha256 "0d43e56769f1bcac02466b34dc4f94675208a82ce16fd31a67c82e4451c997d1"
+  url "https://github.com/lii-enac/libivy/archive/3.15.7.tar.gz"
+  sha256 "c7410dcb62a6fc71f71b5ea536439292fc002182376738eb8bf90212d368b496"
 
   depends_on "pcre"
-  depends_on 'pkg-config'
+  depends_on "pkg-config"
 
   def install
     cd "src" do
