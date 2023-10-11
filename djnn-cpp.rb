@@ -1,24 +1,20 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class DjnnCpp < Formula
-  desc "C++ library for interactive software programming "
+  desc "C++ library for interactive software programming"
   homepage "https://github.com/lii-enac/djnn-cpp"
-  url "https://github.com/lii-enac/djnn-cpp/archive/1.19.0.zip"
-  sha256 "0f315598dee073592d3cbe6354db167ab0e1f63c227f71e66433d101981b37ca"
+  url "https://github.com/lii-enac/djnn-cpp/archive/1.20.0.tar.gz"
+  sha256 "175d8a298ffb5a40a49d7c594f9ffdb3a6e956a8406cab0c1fb4478504cfd6fa"
 
-  depends_on "qt@5" => "5.15.2"
-  depends_on "bison" => "3.5.7"
-  depends_on "flex" => "2.6.4"
-  depends_on "libivy" => "3.15"
-  depends_on "expat"
+  depends_on "bison"
   depends_on "curl"
-
+  depends_on "expat"
+  depends_on "flex"
+  depends_on "libivy"
+  depends_on "qt@5"
 
   def install
     ENV.deparallelize
-    ENV['CXX'] = "c++" 
-    system "make", "-j6", "install", "PREFIX=#{prefix}"
+    ENV["CXX"] = ENV.cxx.to_s
+    system "make", "-j8", "install", "PREFIX=#{prefix}"
   end
 
   test do
