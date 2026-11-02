@@ -2,7 +2,7 @@ class Libivy < Formula
   desc "Library for bus Ivy (ENAC)"
   homepage "https://github.com/lii-enac/libivy"
   url "https://github.com/lii-enac/libivy/archive/refs/tags/3.16.1.tar.gz"
-  sha256 "5131d72e866353f579c4f069853c35a88994b6d2e3d81913cf00d813981ee457"
+  sha256 "f9daaf86574bc393eea0ef7184ef4bdb5aad569b8016600bc2712ef7b887999a"
   license "LGPL-2.0-or-later"
   head "https://github.com/lii-enac/libivy.git", branch: "master"
 
